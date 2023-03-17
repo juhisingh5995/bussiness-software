@@ -1,0 +1,161 @@
+.pricing-section {
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(79, 73, 67) 100%), url(../image/background32.jpg);
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    .pricing {
+        @media (min-width: 998px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+
+        .pricing-content {
+            padding-bottom: 48px;
+
+            @media (min-width: 998px) {
+                max-width: 40%;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+                font-size: 56px;
+                color: $color-white;
+
+                @media (min-width: 576px) {
+                    font-size: 92px;
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 24px;
+                font-family: $secondary-family;
+                color: $color-white;
+                padding-bottom: 24px;
+
+                @media (min-width: 576px) {
+                    font-size: 26px;
+                }
+
+            }
+
+            .button {
+                a {
+                    background: $color-black;
+                }
+            }
+        }
+
+        .table-col {
+            @media (min-width: 998px) {
+                max-width: 55%;
+                margin-right: -32px;
+                margin-left: -32px;
+            }
+
+            .table-row {
+                @media (min-width: 576px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 14px;
+
+                }
+
+                .table {
+                    position: relative;
+                    margin-bottom: 16px;
+
+                    @media (min-width: 576px) {
+                        margin-right: 15px;
+                    }
+
+                    &.table-first {
+                        .button {
+                            a {
+                                background: $color-black;
+                            }
+                        }
+                    }
+                    &.table-second{
+                        .table-wrapper{
+                            background: linear-gradient(
+                                to bottom,
+                                gray 0%,
+                                gray 35%,
+                                $color-white 35%,
+                                $color-white 100%,
+                              );
+                        }
+                             
+                         }
+
+                    .table-wrapper {
+                        padding: 32px;
+                        background: #fafafa;
+
+                        .table-heading {
+                            padding-bottom: 48px;
+
+                        
+                            h1 {
+                                font-size: 22px;
+                                font-family: $secondary-family;
+                                text-align: left;
+                                margin-bottom: 16px;
+                                @media (min-width: 576px) {
+                                   font-size:28px;
+                                   font-weight: 600;
+                                }
+            
+                            }
+
+                            h2 {
+                                font-size: 22px;
+                                text-align: left;
+                                font-family: $secondary-family;
+                                font-weight: 600;
+                                padding-bottom: 16px;
+                                @media (min-width: 576px) {
+                                    font-size:28px;
+                                }
+            
+                            }
+
+                            h3 {
+                                text-align: left;
+                                font-size: 14px;
+                            }
+                        }
+
+                        ul {
+                            padding-top: 32px;
+
+                            li {
+                                padding: 6px;
+                                border-bottom: 1px solid #f23801;
+
+                                a {
+                                    text-decoration: none;
+                                    line-height: 1.73;
+                                    color: $color-black;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+            }
+        }
+    }
+}

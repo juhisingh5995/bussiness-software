@@ -1,0 +1,32 @@
+.footer {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    background-color: #fafafa;
+
+    .footer-row {
+        @media (min-width: 576px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            margin-bottom: 24px;
+            text-align: center;
+
+            a {
+                img {
+                    width: 80px;
+                }
+            }
+        }
+
+        .copyright {
+            p {
+                font-size: 15px;
+                line-height: 1.7;
+                text-align: center
+            }
+        }
+    }
+}

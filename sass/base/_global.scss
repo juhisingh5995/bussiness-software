@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-family;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+
+}
+
+.narrow-container {
+  @media (min-width: 576px) {
+    max-width: 1140px;
+  }
+}
+
+
+.colored-text {
+  color: $color-red;
+
+  @media (min-width: 576px) {
+    font-weight: 500;
+  }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a {
+  line-height: 1;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-weight: 400;
+  text-align: center;
+}
+
+h5 {
+  color: $color-light_gray;
+  margin-bottom: 7px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.73;
+
+}
+
+.subtitle {
+  font-weight: 600;
+  text-align: left;
+  font-family: $secondary-family;
+  font-size: 38px;
+  margin-bottom: 16px;
+
+  @media (min-width: 576px) {
+    font-size: 54px;
+  }
+}
+
+// slick slider-1 dot
+
+
+.project-section {
+
+  .slider-dots-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    gap: 20px;
+  }
+
+  .progress-circle {
+    width: 2px;
+    height: 2px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #000;
+  }
+
+  .slider-dots button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    transition: .3s all;
+    position: relative;
+    z-index: 0;
+  }
+
+  .slider-dots-box .slick-active button {
+    width: 40px;
+    height: 40px;
+  }
+
+  li {
+    list-style: none;
+
+  }
+
+
+  .slider-dots button:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+
+  }
+
+
+  .slider-dots-box .slick-active button:after {
+    content: "";
+    display: block;
+    margin-top: -40px;
+  }
+
+  .slider-dots-box .slick-active button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
+
+  .circle-bg {
+    fill: rgba(255, 255, 255, 0);
+    stroke: rgba(0, 0, 0, 0.05);
+    stroke-width: 2;
+    stroke-linecap: butt;
+  }
+
+  .circle-go {
+    fill: rgba(255, 255, 255, 0);
+    stroke: $color-black;
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: progress 22s;
+    stroke-dasharray: 360px;
+    stroke-dashoffset: 360;
+  }
+
+
+
+  @keyframes progress {
+    from {
+      stroke-dashoffset: 360;
+    }
+
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+// slider-1  dots start
+
+// slider-2  dots start
+
+
+
+.testimonial-section {
+
+  .slider-dots-box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-dots-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    gap: 20px;
+  }
+
+  /* .progress-circle{
+  width:2px;
+  height: 2px;
+  border:2px solid black;
+  border-radius: 50%;
+  background-color: #000;
+} */
+
+  .slider-dots-1 button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    transition: .3s all;
+    position: relative;
+    z-index: 0;
+  }
+
+  .slider-dots-box-1 .slick-active button {
+    width: 40px;
+    height: 40px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+
+  .slider-dots-1 button:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+
+
+  .slider-dots-box-1 .slick-active button:after {
+    content: "";
+    display: block;
+    margin-top: -42px;
+  }
+
+  .slider-dots-box-1 .slick-active button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+  }
+
+  .circle-bg {
+    fill: rgba(255, 255, 255, 0);
+    stroke: rgba(0, 0, 0, 0.05);
+    stroke-width: 2;
+    stroke-linecap: butt;
+  }
+
+  .circle-go {
+    fill: rgba(255, 255, 255, 0);
+    stroke: $color-black;
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: progress 5s;
+    stroke-dasharray: 360px;
+    stroke-dashoffset: 360;
+  }
+
+
+
+  @keyframes progress {
+    from {
+      stroke-dashoffset: 360;
+    }
+
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+// slider-2  dots end
+
+
+// fadeInBottom start
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

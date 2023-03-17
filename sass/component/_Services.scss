@@ -1,0 +1,106 @@
+.service-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: $color-white;
+
+
+    .service-row {
+        padding: 0 15px;
+
+        @media (min-width: 576px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .service-text {
+            @media (min-width: 576px) {
+                max-width: 50%;
+            }
+
+            p {
+
+                margin-bottom: 10px;
+                font-size: 24px;
+                font-family: $secondary-family;
+                text-align: left;
+                line-height: 1.3;
+
+                @media (min-width: 576px) {
+                    max-width: 60%;
+
+                }
+            }
+
+            .button {
+
+                text-align: left;
+
+                a {
+                    background-color: $color-black;
+
+                    @media (min-width: 576px) {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+
+                }
+            }
+        }
+
+        .feature-solution {
+            @media (min-width: 576px) {
+                width: 50%;
+                border-left: 2px solid $color-red;
+                padding-left: 28px;
+            }
+
+            .features {
+                margin-top: 48px;
+                margin-bottom: 32px;
+
+                @media (min-width: 576px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    gap: 62px;
+                }
+
+                .feature--solution {
+                    margin-bottom: 32px;
+
+                    @media (min-width: 576px) {
+                        width: 50%;
+                    }
+
+                    .icon {
+                        i {
+                            font-size: 56px;
+                        }
+                    }
+
+                    h2 {
+                        margin-top: 10px;
+                        margin-bottom: 6px;
+                        font-size: 28px;
+                        line-height: 1.2;
+                        font-weight: 500;
+                        font-family: $secondary-family;
+                        text-align: left;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        text-align: left;
+                        line-height: 1.7;
+                        margin-bottom: 16px;
+                    }
+
+                }
+            }
+
+        }
+    }
+}

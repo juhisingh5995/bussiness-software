@@ -1,0 +1,62 @@
+.client-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    .client {
+        h1.subtitle {
+            text-align: center;
+            padding-bottom: 32px;
+        }
+    }
+
+    .client-row {
+        @media (min-width: 576px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .features-img {
+            margin-bottom: 50px;
+            transition: all 0.3s;
+            overflow: hidden;
+            position: relative;
+            background-color: transparent;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .client-wrapper {
+                overflow: hidden;
+
+                .client-img {
+                    &:hover {
+                        img {
+                            transition: 0.4s;
+                            transform: translateY(0);
+                        }
+                    }
+
+                    img {
+                        margin: 0;
+                        transition: 0.4s;
+                        transform: translateY(-100%);
+                        width: 120px;
+                        display: block;
+
+                    }
+
+                    // .img-2 {
+                    //     position: absolute;
+                    //     transform: translateY(-100%);
+
+
+                    // }
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,74 @@
+.project-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: $color-white;
+
+
+    .project-client {
+        padding-top: 96px;
+        padding-bottom: 96px;
+        overflow: hidden;
+        background-color: $color-white;
+
+        .image-row {
+            .wrap-img {
+                &:hover {
+                    .slider-img {
+                        img {
+                            transform: scale(1.1);
+                            transition: all 1s cubic-bezier(0.475, 0.425, 0, 0.995);
+                        }
+                    }
+
+                    .slider-content {
+                        opacity: 1;
+                        transform: rotateZ(0) translateY(0);
+                    }
+                }
+
+                .slider-img {
+                    overflow: hidden;
+                    margin-bottom: 32px;
+
+                    img {
+                        height: 340px;
+                        width: 100%;
+
+                        @media (min-width: 576px) {
+                            padding: 14px;
+                        }
+
+                    }
+                }
+
+                .slider-content {
+                    opacity: 0;
+                    transform: rotateZ(5deg) translateY(8px);
+                    transform-origin: left;
+                    transition: all 1s cubic-bezier(0.475, 0.425, 0, 0.995);
+
+
+                    .slider-content-wrap {
+                        h2 {
+                            font-weight: 600;
+                            font-family: $secondary-family;
+                            font-size: 25px;
+                            line-height: 30px;
+                            text-align: left;
+                            padding-bottom: 8px;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            line-height: 1.73;
+                            text-align: left;
+                            font-weight: 400;
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
